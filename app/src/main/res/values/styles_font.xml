@@ -1,0 +1,330 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--所有字体集成基础样式，便于全局字体统一设置-->
+    <style name="AppFont" parent="@android:style/TextAppearance" />
+
+    <!--标题01开始-->
+    <style name="Title_E1" parent="AppFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+    </style>
+
+    <style name="Title_E2" parent="AppFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Title_F1" parent="AppFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+    </style>
+    <style name="Title_F2" parent="AppFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp17</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <!--标题01结束-->
+    <!--标题02开始-->
+    <style name="Title_H1" parent="AppFont">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+    </style>
+    <style name="Title_H2" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+    </style>
+    <style name="Title_H3" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+    <style name="Title_H4" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Title_H5" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <!--标题02结束-->
+    <!--标题03开始-->
+    <style name="Title_K1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+    </style>
+    <style name="Title_K2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_black_dark</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Title_K3" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Title_K4_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Title_K5" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_white_85</item>
+    </style>
+    <style name="Title_K6_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--标题03结束-->
+    <!--正文开始-->
+    <style name="Body_H1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+    </style>
+    <style name="Body_H2" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Body_J1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Body_J2" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Body_J3" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+    <style name="Body_J4_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--正文结束-->
+    <!--注解说明开始-->
+    <style name="Caption_K1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+    </style>
+    <style name="Caption_K2" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_blue_medium</item>
+    </style>
+    <style name="Caption_K3" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_black_light</item>
+    </style>
+    <style name="Caption_K4_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_K5" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_gray_slight</item>
+    </style>
+    <style name="Caption_K6" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Caption_M1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+    </style>
+    <style name="Caption_M2" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_black_light</item>
+    </style>
+    <style name="Caption_M2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_black_light</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_M2_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_black_light</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_M3_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_M4" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Caption_N1" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+    </style>
+    <style name="Caption_N2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_N3_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_N4" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+    <style name="Caption_N5" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">@color/font_white_85</item>
+    </style>
+    <style name="Caption_P1_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Caption_P2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--注解说明结束-->
+    <!--按钮标签开始-->
+    <style name="Button_G1_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_G1_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_G2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_G2_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J1_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J1_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J2_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J3_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_J3_Center_Elastic" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_M1_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_M2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_M3_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_gray_medium</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_M4_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp12</item>
+        <item name="android:textColor">@color/font_gray_clickUnable</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_P1_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Button_P2_Center" parent="AppFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/sp10</item>
+        <item name="android:textColor">@color/font_primary</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--按钮标签结束-->
+</resources>

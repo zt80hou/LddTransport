@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/login_logo" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="汇目云账号登录"
+        android:textColor="@color/font_medium"
+        android:textSize="23sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入汇目云账号"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:textColor="@color/font_medium"
+            android:textColorHint="#909090"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_clear_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_clear_circle"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@color/line_divider" />
+
+    <RelativeLayout
+        android:id="@+id/rlPwd"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/ivEye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_eye_closed" />
+
+        <ImageView
+            android:id="@+id/ivClearPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ivEye"
+            android:padding="8dp"
+            android:src="@drawable/ic_clear_circle"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/ivClearPwd"
+            android:background="@null"
+            android:digits="@string/digits_password_rule"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:textColor="@color/font_medium"
+            android:textColorHint="#909090"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@color/line_divider" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="5dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/dp12"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-10dp"
+            android:checked="true"
+            android:text="登录即代表您同意"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/dp12" />
+
+        <TextView
+            android:id="@+id/agree_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策》"
+            android:textColor="@color/agree_txt_color"
+            android:textSize="@dimen/dp12" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/button_long"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="66dp"
+        android:text="登录" />
+
+
+</LinearLayout>

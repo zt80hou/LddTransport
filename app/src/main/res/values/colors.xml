@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--主色-->
+    <color name="colorPrimary">#1138FB</color>
+    <!--App半透明色调-->
+    <color name="colorPrimaryTranslucent">#551138FB</color>
+    <!--App 30%透明色调-->
+    <color name="colorPrimaryTranslucent30">#4D1138FB</color>
+    <!--App 10%透明色调-->
+    <color name="colorPrimaryTranslucent10">#1A1138FB</color>
+
+    <!--个人信息页 背景色-->
+    <color name="colorPersonalDataBg">#F8F8F8</color>
+
+
+    <color name="transparent">#00000000</color> <!-- 透明色-->
+    <color name="transparent_90">#F2000000</color>  <!-- 透明色 90%-->
+    <color name="transparent_80">#CC000000</color>  <!-- 透明色 80%-->
+    <color name="transparent_70">#B3000000</color>  <!-- 透明色 70%-->
+    <color name="transparent_60">#99000000</color>  <!-- 透明色 60%-->
+    <color name="transparent_55">#8C000000</color>  <!-- 透明色 55%-->
+    <color name="transparent_50">#80000000</color>  <!-- 透明色 50%-->
+    <color name="transparent_40">#66000000</color>  <!-- 透明色 40%-->
+    <color name="transparent_30">#4D000000</color>  <!-- 透明色 30%-->
+    <color name="transparent_20">#33000000</color>  <!-- 透明色 20%-->
+    <color name="transparent_10">#1A000000</color>  <!-- 透明色 10%-->
+    <color name="transparent_05">#0D000000</color>  <!-- 透明色 5%-->
+
+    <color name="trans_white_10">#1AFFFFFF</color>  <!-- 白色透明 10%-->
+    <color name="trans_white_20">#33FFFFFF</color>  <!-- 白色透明 20%-->
+    <color name="trans_white_30">#4DFFFFFF</color>  <!-- 白色透明 30%-->
+    <color name="trans_white_40">#66FFFFFF</color>  <!-- 白色透明 40%-->
+    <color name="trans_white_50">#80FFFFFF</color>  <!-- 白色透明 50%-->
+    <color name="trans_white_60">#99FFFFFF</color>  <!-- 白色透明 60%-->
+    <color name="trans_white_70">#B3FFFFFF</color>  <!-- 白色透明 70%-->
+    <color name="trans_white_80">#CCFFFFFF</color>  <!-- 白色透明 80%-->
+    <color name="trans_white_85">#D9FFFFFF</color>  <!-- 白色透明 80%-->
+    <color name="trans_white_90">#F2FFFFFF</color>  <!-- 白色透明 90%-->
+    <color name="trans_white">#FFFFFFFF</color>  <!-- 白色透明 全透明-->
+
+    <color name="menu_unselected">#A8ACB4</color>
+    <color name="menu_selected">@color/colorPrimary</color>
+
+    <color name="font_dark">#1A1A1A</color>
+    <color name="font_medium">#3C3C3C</color>
+    <color name="font_light">#504F4F</color>
+    <color name="font_gray">#8F8F8F</color>
+    <color name="bg_light">#faf7f8</color>
+    <color name="line_divider">#eeeeee</color>
+
+    <color name="font_black_dark">#1C1C1D</color>
+    <color name="font_black">#3A3A3C</color>
+    <color name="font_black_light">#505052</color>
+    <color name="font_gray_medium">#7F7F82</color>
+    <color name="font_gray_light">#505052</color>
+    <color name="font_gray_slight">#A9A9AC</color>
+    <color name="font_gray_clickUnable">#D0D0D2</color>
+    <color name="font_blue_medium">#7A86AF</color>
+    <color name="font_white">@color/white</color>
+    <color name="font_white_85">@color/trans_white_85</color>
+    <color name="font_primary">@color/colorPrimary</color>
+
+    <!-- 协议颜色 -->
+    <color name="agree_txt_color">#1BBCF0</color>
+
+</resources>

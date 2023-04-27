@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="Theme.App" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="AppActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 全透明 沉浸式主题样式 -->
+    <style name="TranslucentTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置状态栏半透明——解除注释 -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!-- 设置底部导航栏半透明，默认false黑色，设置true半透明 -->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Android 5.0+，设置状态栏全透明透明 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="hint_ui_bg" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

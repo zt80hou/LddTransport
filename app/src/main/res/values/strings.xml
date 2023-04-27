@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">乐多多集运</string>
+
+
+    <!--提示语相关-->
+    <string name="hint_please_input_account">请输入手机号</string>
+    <string name="hint_please_input_password">请输入密码</string>
+    <string name="hint_please_input_old_password">请输入您的原密码</string>
+    <string name="hint_password_role">密码由6～20个字母、数字和符号组成</string>
+    <string name="hint_please_input_password_again">请输入您的新密码</string>
+    <string name="hint_please_input_new_password">请输入您的新密码</string>
+    <string name="hint_please_input_new_password_again">请再次输入您的新密码</string>
+    <string name="hint_please_input_verification_code">请输入验证码</string>
+    <string name="hint_please_input_org_name">请输入您的机构</string>
+    <string name="hint_please_input_org_code">请输入您的机构码</string>
+    <string name="hint_please_input_search_key">请输入搜索关键词</string>
+    <string name="digits_number_letters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+    <!--密码数字字母字符-->
+    <string name="digits_password_rule">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+
+
+
+</resources>

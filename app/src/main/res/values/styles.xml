@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--给Activity设置的dialog主题样式-->
+    <style name="dialogForAct" parent="Theme.AppCompat.Dialog"><!--name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式-->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentNavigation">false</item><!--虚拟导航栏不需要透明-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--隐藏标题栏-->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <style name="dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--隐藏标题栏-->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Dialog的样式. 宽度最大, 高度匹配, 是否浮现于Activity之上, 关闭背景暗色. -->
+    <style name="BottomDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/transparent_70</item>
+        <item name="windowMinWidthMinor">90%</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_slid_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slid_down</item>
+    </style>
+
+    <!-- Dialog的样式. 宽度最大, 高度匹配, 是否浮现于Activity之上, 关闭背景暗色. -->
+    <style name="NoDimBottomDialog" parent="@style/BottomDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent_90
+        </item> <!-- 5.4.0 UI优化，礼物弹窗透明度，超俊说先改成90 -->
+    </style>
+
+    <!-- Dialog的样式. 宽度最大, 高度匹配, 是否浮现于Activity之上, 开启背景暗色. -->
+    <style name="DimBottomDialog" parent="@style/BottomDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--带底部弹出动画的Dialog样式-->
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slid_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slid_down</item>
+        <!--<item name="android:activityOpenEnterAnimation">@anim/dialog_slid_up</item>
+        <item name="android:activityOpenExitAnimation">@anim/dialog_slid_down</item>
+        <item name="android:activityCloseEnterAnimation">@anim/dialog_slid_up</item>
+        <item name="android:activityCloseExitAnimation">@anim/dialog_slid_down</item>-->
+    </style>
+
+    <!--控件样式 主题色圆弧样式-->
+    <style name="button_long">
+        <item name="android:layout_width">318dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_corner8_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:width">240dp</item>
+        <item name="android:height">60dp</item>
+    </style>
+
+</resources>

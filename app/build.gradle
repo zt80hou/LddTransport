@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.ldd.transport"
+        minSdk 21
+        targetSdk 27
+        versionCode 100
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('LddTransport.jks')
+            storePassword 'ldd2023'
+            keyAlias 'LddTransport'
+            keyPassword 'ldd2023'
+        }
+        release {
+            storeFile file('LddTransport.jks')
+            storePassword 'ldd2023'
+            keyAlias 'LddTransport'
+            keyPassword 'ldd2023'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    //打包apk
+    applicationVariants.all { variant ->
+        //确定输出文件名
+        def today = new Date()
+        def path = variant.flavorName + ((project.name != "app") ? project.name : rootProject.name.replace(" ", "")) + "_v" + variant.versionName + "_" + today.format('yyyyMMdd') + "_" + ".apk"
+        variant.outputs.forEach {
+            it.outputFileName = path
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.?ar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    api 'com.squareup.okhttp3:okhttp:3.12.0'
+    api 'com.squareup.okio:okio:1.17.4'
+    api 'com.google.code.gson:gson:2.8.9'
+    implementation('com.github.bumptech.glide:glide:4.13.0')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+    //recyclerView添加header、footer
+    implementation 'com.github.donkingliang:HeaderViewAdapter:1.3.0'
+    //下拉刷新
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    //Event事件处理
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    //图片预览
+    implementation('com.ycjiang:ImagePreview:2.3.6')
+    // 地址选择、时间选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    //沉浸式状态栏
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+}

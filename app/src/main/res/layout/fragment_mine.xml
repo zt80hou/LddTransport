@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/base_page_edge">
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/default_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="管理员"
+        android:textColor="@color/font_medium"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_head"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="V10"
+        android:textColor="@color/font_gray"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/iv_head"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
